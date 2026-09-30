@@ -64,7 +64,7 @@ impl<'a, T: PeripheralType> Peri<'a, T> {
     /// This converts from `Peri<'a, T>` to `Peri<'a, U>`, using an
     /// `Into` impl to convert from `T` to `U`.
     ///
-    /// For example, this can be useful to.into() GPIO pins: converting from Peri<'a, PB11>` to `Peri<'a, AnyPin>`.
+    /// For example, this can be useful `to.into()` GPIO pins: converting from `Peri<'a, PB11>` to `Peri<'a, AnyPin>`.
     #[inline]
     pub fn into<U>(self) -> Peri<'a, U>
     where
